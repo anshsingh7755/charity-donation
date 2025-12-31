@@ -58,7 +58,7 @@ if (donationForm) {
         };
 
         // Show success message
-        alert(`Thank you for your generous donation of $${amount}! We will contact you shortly.`);
+        alert(`Thank you for your generous donation of ₹${amount}! We will contact you shortly.`);
         donationForm.reset();
         amountButtons.forEach(btn => btn.classList.remove('active'));
     });
