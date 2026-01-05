@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hope Foundation - Make a Difference Today</title>
+    <title>Donate - Hope Foundation</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -22,35 +22,33 @@
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Every Act of Kindness Counts</h1>
-            <p class="tagline">"The greatest wealth is health" - Virgil</p>
-            <p class="description">Transform lives through your generosity. Join thousands making a difference every day.</p>
-            <a href="donate.html" class="btn btn-primary">Donate Now</a>
-        </div>
-    </section>
-
-    <section class="quotes-section">
+    <section class="donate-section">
         <div class="container">
-            <h2>Inspiration for Change</h2>
-            <div class="quotes-grid">
-                <div class="quote-card">
-                    <p class="quote-text">"No act of kindness, no matter how small, is ever wasted."</p>
-                    <p class="quote-author">— Aesop</p>
+            <h2>Make Your Contribution</h2>
+            <p class="donate-subtitle">"Generosity is not just about money. It's about giving your time, your talents, your energy." - Unknown</p>
+            <div class="donation-form">
+                <div class="amount-selector">
+                    <button class="amount-btn" data-amount="500">₹500</button>
+                    <button class="amount-btn" data-amount="1250">₹1,250</button>
+                    <button class="amount-btn" data-amount="2500">₹2,500</button>
+                    <button class="amount-btn" data-amount="5000">₹5,000</button>
+                    <input type="number" id="custom-amount" placeholder="Custom Amount" min="1">
                 </div>
-                <div class="quote-card">
-                    <p class="quote-text">"The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate."</p>
-                    <p class="quote-author">— Ralph Waldo Emerson</p>
-                </div>
-                <div class="quote-card">
-                    <p class="quote-text">"Everybody can be great because everybody can serve."</p>
-                    <p class="quote-author">— Martin Luther King Jr.</p>
-                </div>
-                <div class="quote-card">
-                    <p class="quote-text">"Service to others is the rent you pay for your room here on Earth."</p>
-                    <p class="quote-author">— Muhammad Ali</p>
-                </div>
+                <form id="donationForm" class="form-grid">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <select required>
+                        <option value="">Select Cause</option>
+                        <option value="education">Education</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="shelter">Shelter</option>
+                        <option value="all">All Causes</option>
+                    </select>
+                    <textarea placeholder="Message (Optional)" style="grid-column: 1 / -1;"></textarea>
+                    <button type="submit" class="btn btn-primary" style="grid-column: 1 / -1;">Proceed to Payment</button>
+                </form>
+                <div class="donation-message"><i class="fas fa-lock"></i> Your donation is secure and protected</div>
             </div>
         </div>
     </section>

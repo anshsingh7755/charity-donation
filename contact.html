@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hope Foundation - Make a Difference Today</title>
+    <title>Contact - Hope Foundation</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -22,35 +22,53 @@
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Every Act of Kindness Counts</h1>
-            <p class="tagline">"The greatest wealth is health" - Virgil</p>
-            <p class="description">Transform lives through your generosity. Join thousands making a difference every day.</p>
-            <a href="donate.html" class="btn btn-primary">Donate Now</a>
-        </div>
-    </section>
-
-    <section class="quotes-section">
+    <section class="contact">
         <div class="container">
-            <h2>Inspiration for Change</h2>
-            <div class="quotes-grid">
-                <div class="quote-card">
-                    <p class="quote-text">"No act of kindness, no matter how small, is ever wasted."</p>
-                    <p class="quote-author">— Aesop</p>
+            <h2>Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Charity Street, Hope City, HC 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@hopefoundation.org</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="quote-card">
-                    <p class="quote-text">"The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate."</p>
-                    <p class="quote-author">— Ralph Waldo Emerson</p>
-                </div>
-                <div class="quote-card">
-                    <p class="quote-text">"Everybody can be great because everybody can serve."</p>
-                    <p class="quote-author">— Martin Luther King Jr.</p>
-                </div>
-                <div class="quote-card">
-                    <p class="quote-text">"Service to others is the rent you pay for your room here on Earth."</p>
-                    <p class="quote-author">— Muhammad Ali</p>
-                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <select required>
+                        <option value="">Select Subject</option>
+                        <option value="donation">Donation Inquiry</option>
+                        <option value="partnership">Partnership</option>
+                        <option value="volunteer">Volunteer</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
