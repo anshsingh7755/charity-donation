@@ -28,21 +28,21 @@
 }
 
 .hero h1 {
-    font-size: 56px;
+    font-size: clamp(32px, 8vw, 56px);
     margin-bottom: 20px;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .hero .tagline {
-    font-size: 28px;
+    font-size: clamp(18px, 6vw, 28px);
     font-style: italic;
     margin-bottom: 20px;
     color: rgba(255, 255, 255, 0.95);
 }
 
 .hero .description {
-    font-size: 18px;
+    font-size: clamp(14px, 4vw, 18px);
     margin-bottom: 30px;
     color: rgba(255, 255, 255, 0.9);
 }
@@ -78,14 +78,14 @@
 
 /* Quotes Section */
 .quotes-section {
-    padding: 80px 20px;
+    padding: clamp(40px, 10vw, 80px) clamp(15px, 5vw, 20px);
     background: var(--light-bg);
 }
 
 .quotes-section h2 {
     text-align: center;
-    font-size: 42px;
-    margin-bottom: 60px;
+    font-size: clamp(28px, 8vw, 42px);
+    margin-bottom: clamp(30px, 8vw, 60px);
     color: var(--text-dark);
 }
 
@@ -125,13 +125,13 @@
 
 /* About Section */
 .about {
-    padding: 80px 20px;
+    padding: clamp(40px, 10vw, 80px) clamp(15px, 5vw, 20px);
 }
 
 .about h2 {
     text-align: center;
-    font-size: 42px;
-    margin-bottom: 60px;
+    font-size: clamp(28px, 8vw, 42px);
+    margin-bottom: clamp(30px, 8vw, 60px);
     color: var(--text-dark);
 }
 
@@ -181,31 +181,35 @@
 
 /* Causes Section */
 .causes {
-    padding: 80px 20px;
+    padding: clamp(40px, 10vw, 80px) clamp(15px, 5vw, 20px);
     background: var(--light-bg);
 }
 
 .causes h2 {
     text-align: center;
-    font-size: 42px;
-    margin-bottom: 60px;
+    font-size: clamp(28px, 8vw, 42px);
+    margin-bottom: clamp(30px, 8vw, 60px);
     color: var(--text-dark);
 }
 
 .causes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(clamp(250px, 30vw, 320px), 1fr));
+    gap: clamp(20px, 5vw, 30px);
 }
 
 .cause-card {
     background: var(--white);
-    padding: 40px;
+    padding: clamp(20px, 5vw, 40px);
     border-radius: 10px;
     box-shadow: var(--shadow);
     text-align: center;
     transition: var(--transition);
     border-top: 4px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
 }
 
 .cause-card:nth-child(1) {
@@ -230,21 +234,25 @@
 }
 
 .cause-icon {
-    font-size: 48px;
+    font-size: clamp(36px, 10vw, 48px);
     color: var(--primary-color);
     margin-bottom: 20px;
 }
 
 .cause-card h3 {
-    font-size: 24px;
+    font-size: clamp(18px, 5vw, 24px);
     margin-bottom: 15px;
     color: var(--text-dark);
+    word-break: break-word;
 }
 
 .cause-card p {
     color: var(--text-light);
     margin-bottom: 20px;
     line-height: 1.6;
+    font-size: clamp(13px, 3vw, 16px);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .progress-text {
@@ -276,15 +284,15 @@
 
 /* Impact Section */
 .impact {
-    padding: 80px 20px;
+    padding: clamp(40px, 10vw, 80px) clamp(15px, 5vw, 20px);
     background: linear-gradient(135deg, var(--dark-bg), var(--primary-color));
     color: var(--white);
 }
 
 .impact h2 {
     text-align: center;
-    font-size: 42px;
-    margin-bottom: 60px;
+    font-size: clamp(28px, 8vw, 42px);
+    margin-bottom: clamp(30px, 8vw, 60px);
 }
 
 .impact-grid {
@@ -321,12 +329,12 @@
 
 /* Donation Section */
 .donate-section {
-    padding: 80px 20px;
+    padding: clamp(40px, 10vw, 80px) clamp(15px, 5vw, 20px);
 }
 
 .donate-section h2 {
     text-align: center;
-    font-size: 42px;
+    font-size: clamp(28px, 8vw, 42px);
     margin-bottom: 15px;
     color: var(--text-dark);
 }
@@ -417,21 +425,21 @@
 
 /* Contact Section */
 .contact {
-    padding: 80px 20px;
+    padding: clamp(40px, 10vw, 80px) clamp(15px, 5vw, 20px);
     background: var(--light-bg);
 }
 
 .contact h2 {
     text-align: center;
-    font-size: 42px;
-    margin-bottom: 60px;
+    font-size: clamp(28px, 8vw, 42px);
+    margin-bottom: clamp(30px, 8vw, 60px);
     color: var(--text-dark);
 }
 
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: clamp(30px, 8vw, 60px);
 }
 
 .contact-info {
@@ -497,7 +505,7 @@
 .footer {
     background: var(--dark-bg);
     color: var(--white);
-    padding: 60px 20px 20px;
+    padding: clamp(30px, 8vw, 60px) clamp(15px, 5vw, 20px) clamp(10px, 3vw, 20px);
 }
 
 .footer-content {
